@@ -19,7 +19,6 @@
 .footer-form {
   display: flex;
   flex-direction: column;
-  column-gap: 16px;
 }
 
 .footer-news {
@@ -64,7 +63,6 @@
   max-width: 279px;
   height: 42px;
   outline: none;
-  margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0);
   background-color: rgba(13, 11, 10, 0.05);
 }
@@ -96,11 +94,19 @@ input:focus:-moz-placeholder {
 .footer-input:not(:placeholder-shown):invalid ~ .text-invalid {
   display: block;
 }
+.inp-wrp {
+  display: flex;
+  flex-direction: column;
+}
 .text-invalid {
   font-size: 14px;
   padding-left: 20px;
   margin-top: 4px;
-  display: none;
+  visibility: hidden;
+  color: #b10000; 
+}
+.footer-input:not(:placeholder-shown):invalid~.text-invalid {
+  visibility: visible;
 }
 .text-invalid {
   color: #b10000;
@@ -143,6 +149,10 @@ input:focus:-moz-placeholder {
   color: #0d0b0a;
   padding: 8px 0px;
 }
+.text-link:hover,
+.text-link:focus {
+  opacity: 0.5;
+}
 /* -----comyright------ */
 .footer-licence {
   display: block;
@@ -170,6 +180,7 @@ input:focus:-moz-placeholder {
     display: flex;
     flex-direction: row;
     row-gap: 16px;
+   gap: 16px;;
   }
 
   .footer-input {
@@ -219,17 +230,10 @@ input:focus:-moz-placeholder {
   }
 
   .footer-form {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex-wrap: nowrap;
+    align-items: flex-start;
   }
 
-  .inp-wrp {
-    flex-grow: 1;
-  }
-
-  .footer-input {
+    .footer-input {
     width: 501px;
     height: 42px;
     margin-bottom: 0;
@@ -238,7 +242,6 @@ input:focus:-moz-placeholder {
   .button-footer {
     width: 78px;
     margin-bottom: 0;
-    flex-shrink: 0;
   }
 
   .footer-navigation {

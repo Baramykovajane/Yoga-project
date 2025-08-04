@@ -287,8 +287,8 @@
               </div>
             </li>
           </ul>
+          <a href="#pricing" class="programs-button">Join</a>
         </div>
-        <a href="#pricing" class="programs-button">Join</a>
       </section>
       <!-- Team section -->
       <section class="section team-section" id="team">
@@ -553,8 +553,8 @@
                 <source
                   media="(min-width: 768px) and (max-width: 1335px)"
                   srcset="
-                    /meditators-cats-copy/assets/team-tab-4-min-C9PoNRhl.jpg    1x,
-                    /meditators-cats-copy/assets/team-tab-4@2x-min-_Ejg92CN.jpg 2x
+                    img/team/team-tab-4-min.jpg    1x,
+                    img/team/team-tab-4@2x-min.jpg 2x
                   "
                 />
 
@@ -562,8 +562,8 @@
                 <source
                   media="(min-width: 375px) and (max-width: 767px)"
                   srcset="
-                    img/team/team-tab-4-min.jpg    1x,
-                    img/team/team-tab-4@2x-min.jpg 2x
+                    img/team/team-mob-4-min.jpg    1x,
+                    img/team/team-mob-4@2x-min.jpg 2x
                   "
                 />
 
@@ -1394,6 +1394,8 @@
                 <input
                   class="modal-input"
                   type="tel"
+                  pattern="[0-9]{10,15}"
+                  inputmode="numeric"
                   name="phone"
                   placeholder="Phone"
                   required
@@ -1441,6 +1443,8 @@
                 <input
                   class="modal-input"
                   type="tel"
+                  pattern="[0-9]{10,15}"
+                  inputmode="numeric"
                   name="phone"
                   placeholder="Phone"
                   required
@@ -1488,6 +1492,8 @@
                 <input
                   class="modal-input"
                   type="tel"
+                  pattern="[0-9]{10,15}"
+                  inputmode="numeric"
                   name="phone"
                   placeholder="Phone"
                   required
@@ -1512,26 +1518,27 @@
             Subscribe to our newsletter for the latest updates on our yoga
             courses and events.
           </p>
-          <form class="footer-form">
-            <div class="inp-wrp">
-              <input
-                class="footer-input"
-                type="email"
-                name="email"
-                placeholder="Email"
-                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                required
-              />
-              <p class="text-invalid">Error Text</p>
-            </div>
+          <div class="input-box">
+            <form class="footer-form">
+              <div class="inp-wrp">
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  required
+                />
+                <p class="text-invalid">Error Text</p>
+              </div>
 
-            <button class="button-footer" type="submit">Join</button>
-          </form>
-          <p class="footer-descr policy">
-            By subscribing, you consent to our Privacy Policy and agree to
-            receive updates.
-          </p>
-
+              <button class="button-footer" type="submit">Join</button>
+            </form>
+            <p class="footer-descr policy">
+              By subscribing, you consent to our Privacy Policy and agree to
+              receive updates.
+            </p>
+          </div>
           <p class="licence">© 2025 Yoga Studio. All rights reserved.</p>
         </div>
         <div class="footer-navigation column">

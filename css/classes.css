@@ -1,12 +1,13 @@
 .programs {
   padding: 64px 0;
-  background: #f2fafa;
+  background-color: #f2fafa;
   color: #0d0b0a;
+  width: 100%;
 }
 
 .container-programs {
-  width: 100%;
-  margin: 0 auto;
+  /* width: 100%;
+  margin: 0 auto; */
 }
 
 .intro-text {
@@ -45,7 +46,7 @@
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
-  max-width: 343px;
+  width: 100%;
 }
 
 .programs-picture {
@@ -76,16 +77,16 @@
 }
 
 .programs-button {
-  max-width: 343px;
+  max-width: 343px; 
   width: 100%;
   height: 46px;
   border-radius: 100px;
   border: 1px solid #c2d9fc;
   display: block;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   background-color: #c2d9fc;
   padding: 10px 24px;
   margin: 48px auto 0;
@@ -102,11 +103,10 @@
 @media screen and (min-width: 768px) {
   .programs {
     padding: 40px 0;
-    background-color: #f2fafa;
   }
 
   .container-programs {
-    max-width: 768px;
+    width: 100%;
     padding-bottom: 21px;
   }
 
@@ -162,7 +162,7 @@
   .programs-main {
     font-size: 52px;
     margin: 0 auto 24px;
-    max-width: 768px;
+    width: 100%;
     text-align: center;
   }
 
